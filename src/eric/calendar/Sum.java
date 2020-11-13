@@ -24,7 +24,7 @@ public class Sum {
 	
 	
 	System.out.printf("%d와 %d의 합은 %d입니다",a,b,a+b);
-	
+	sc.close();
 	}
 
 }
