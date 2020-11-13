@@ -6,14 +6,16 @@ public class Calendar {
 	public static void main(String[] args) {
 		
 		System.out.println("일  월  화  수 목  금  토\n--------------------");
-		System.out.println("\n 1  2  3  4  5  6  7");
-		System.out.println("\n 8  9 10 11 12 13 14");
-		System.out.println("\n15 16 17 18 19 20 21");
-		System.out.println("\n22 23 24 25 26 27 28");
+		System.out.println(" 1  2  3  4  5  6  7");
+		System.out.println(" 8  9 10 11 12 13 14");
+		System.out.println("15 16 17 18 19 20 21");
+		System.out.println("22 23 24 25 26 27 28");
 		
-//		달을 입력하세요.
-//		3 (엔터)
-//		3월은 31일까지 있습니다.
+//		월을 입력하면 해당월의 달력을 출력한다.
+//		달력은 모양은 1단계에서 작성한 모양으로 만든다.
+//		1일은 일요일로 정해도 무방하다.
+//		-1을 입력받기 전까지 반복 입력받는다.
+//		프롬프트를 출력한다.
 		
 		String PROMPT = "cal > ";
 		
@@ -25,7 +27,7 @@ public class Calendar {
 		Scanner sc = new Scanner(System.in);
 		int input = sc.nextInt();
 		
-		int[] result = {31,28,31,30,31,30,31,31,30,31,30,31};
+		// int[] result = {31,28,31,30,31,30,31,31,30,31,30,31};
 		
 		if(input == -1) {
 			break;
@@ -37,9 +39,39 @@ public class Calendar {
 			continue;
 		}
 		else { 
-			System.out.printf("%d월은 %d일까지 있습니다.",input,result[input-1]);
+			if(input==2) {
+				System.out.println("일  월  화  수 목  금  토\n--------------------");
+				System.out.println(" 1  2  3  4  5  6  7");
+				System.out.println(" 8  9 10 11 12 13 14");
+				System.out.println("15 16 17 18 19 20 21");
+				System.out.println("22 23 24 25 26 27 28");
+			}
+			else if(input/2 == 1) {
+				System.out.println("일  월  화  수 목  금  토\n--------------------");
+				System.out.println(" 1  2  3  4  5  6  7");
+				System.out.println(" 8  9 10 11 12 13 14");
+				System.out.println("15 16 17 18 19 20 21");
+				System.out.println("22 23 24 25 26 27 28");
+				System.out.println("29 30 31");
+			}
+			else if(input == 8) {
+				System.out.println("일  월  화  수 목  금  토\n--------------------");
+				System.out.println(" 1  2  3  4  5  6  7");
+				System.out.println(" 8  9 10 11 12 13 14");
+				System.out.println("15 16 17 18 19 20 21");
+				System.out.println("22 23 24 25 26 27 28");
+				System.out.println("29 30 31");
+			}
+			else {
+				System.out.println("일  월  화  수 목  금  토\n--------------------");
+				System.out.println(" 1  2  3  4  5  6  7");
+				System.out.println(" 8  9 10 11 12 13 14");
+				System.out.println("15 16 17 18 19 20 21");
+				System.out.println("22 23 24 25 26 27 28");
+				System.out.println("29 30");
+			}
+			}
 		}
 		}
-	}
-
+	
 }
