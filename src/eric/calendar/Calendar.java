@@ -36,7 +36,7 @@ public class Calendar {
 		else if(input > 12) {
 			continue;
 		}
-		else {
+		else { 
 			System.out.printf("%d월은 %d일까지 있습니다.",input,result[input-1]);
 		}
 		}
