@@ -16,9 +16,16 @@ public class Calendar {
 //		3 (엔터)
 //		3월은 31일까지 있습니다.
 		
-		System.out.println("달을 입력하세요");
+		System.out.println("반복횟수를 입력하세요");
+		Scanner scanner = new Scanner(System.in);
+		int times = scanner.nextInt();
+		
+		
+		for(int i=1;i<times+1;i++) {
+		System.out.println("\n달을 입력하세요");
 		Scanner sc = new Scanner(System.in);
 		int input = sc.nextInt();
+		
 		int[] result = {31,28,31,30,31,30,31,31,30,31,30,31};
 		
 		if(input<1) {
@@ -30,9 +37,7 @@ public class Calendar {
 		else {
 			System.out.printf("%d월은 %d일까지 있습니다.",input,result[input-1]);
 		}
-	
-		sc.close();
-		
+		}
 	}
 
 }
